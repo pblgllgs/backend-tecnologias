@@ -11,6 +11,7 @@ import {
 import { TecnologiaService } from './tecnologia.service';
 import { CreateTecnologiaDto } from './dto/create-tecnologia.dto';
 import { UpdateTecnologiaDto } from './dto/update-tecnologia.dto';
+import { TecnologiaResponseDto } from './dto/response-tecnologia.dto';
 
 @Controller('tecnologia')
 export class TecnologiaController {
@@ -35,7 +36,7 @@ export class TecnologiaController {
   update(
     @Param('id', ParseIntPipe) id: number,
     @Body() updateTecnologiaDto: UpdateTecnologiaDto,
-  ) {
+  ): Promise<TecnologiaResponseDto> {
     return this.tecnologiaService.update(id, updateTecnologiaDto);
   }
 

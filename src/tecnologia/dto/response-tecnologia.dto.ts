@@ -1,15 +1,23 @@
-import { Exclude } from 'class-transformer';
+import { Exclude, Expose } from 'class-transformer';
 
 export class TecnologiaResponseDto {
-  constructor(partial: Partial<TecnologiaResponseDto>) {
-    Object.assign(this, partial);
-  }
   id: number;
   name: string;
   owner: string;
   description: string;
   @Exclude()
-  createdAt: Date;
+  created_at: Date;
+  @Expose({ name: 'createdAt' })
+  createdAt() {
+    return this.created_at;
+  }
   @Exclude()
-  updatedAt: Date;
+  updated_at: Date;
+  @Expose({ name: 'updatedAt' })
+  updatedAt() {
+    return this.updated_at;
+  }
+  constructor(partial: Partial<TecnologiaResponseDto>) {
+    Object.assign(this, partial);
+  }
 }

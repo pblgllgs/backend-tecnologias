@@ -15,6 +15,6 @@ model Tecnologia {
   name        String   
   owner       String
   description String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
 }
