@@ -27,8 +27,11 @@ export class TecnologiaService {
     return new TecnologiaResponseDto(newTecnologia);
   }
 
-  async findAll() {
-    return await this.prismaService.tecnologia.findMany();
+  async findAll(): Promise<TecnologiaResponseDto[]> {
+    const tecs = await this.prismaService.tecnologia.findMany();
+    return tecs.map((tec) => {
+      return new TecnologiaResponseDto(tec);
+    });
   }
 
   async findOne(id: number) {

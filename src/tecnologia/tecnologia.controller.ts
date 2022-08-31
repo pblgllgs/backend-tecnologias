@@ -23,7 +23,7 @@ export class TecnologiaController {
   }
 
   @Get()
-  findAll() {
+  findAll(): Promise<TecnologiaResponseDto[]> {
     return this.tecnologiaService.findAll();
   }
 

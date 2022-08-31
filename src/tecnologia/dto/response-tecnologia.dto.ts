@@ -13,10 +13,6 @@ export class TecnologiaResponseDto {
   }
   @Exclude()
   updated_at: Date;
-  @Expose({ name: 'updatedAt' })
-  updatedAt() {
-    return this.updated_at;
-  }
   constructor(partial: Partial<TecnologiaResponseDto>) {
     Object.assign(this, partial);
   }
