@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   ParseIntPipe,
+  Query,
 } from '@nestjs/common';
 import { TecnologiaService } from './tecnologia.service';
 import { CreateTecnologiaDto } from './dto/create-tecnologia.dto';
@@ -23,8 +24,10 @@ export class TecnologiaController {
   }
 
   @Get()
-  findAll(): Promise<TecnologiaResponseDto[]> {
-    return this.tecnologiaService.findAll();
+  findAll(
+    @Query() options: { take?: number; skip?: number },
+  ): Promise<TecnologiaResponseDto[]> {
+    return this.tecnologiaService.findAll(+options.take, +options.skip);
   }
 
   @Get(':id')

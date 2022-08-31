@@ -12,9 +12,10 @@ datasource db {
 
 model Tecnologia {
   id          Int      @id @default(autoincrement())
-  name        String   
+  name        String
   owner       String
+  image       String
   description String
-  created_at   DateTime @default(now())
-  updated_at   DateTime @updatedAt
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
 }

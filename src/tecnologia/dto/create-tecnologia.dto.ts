@@ -6,6 +6,9 @@ export class CreateTecnologiaDto {
   name: string;
   @IsString()
   @IsNotEmpty()
+  image: string;
+  @IsString()
+  @IsNotEmpty()
   owner: string;
   @IsString()
   @IsNotEmpty()

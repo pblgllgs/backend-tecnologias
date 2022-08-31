@@ -4,6 +4,7 @@ export class TecnologiaResponseDto {
   id: number;
   name: string;
   owner: string;
+  image: string;
   description: string;
   @Exclude()
   created_at: Date;

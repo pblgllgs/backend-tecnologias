@@ -6,12 +6,14 @@ interface UpdateTecnologiaParams {
   name?: string;
   description?: string;
   owner?: string;
+  image?: string;
 }
 
 interface CreateTecnologiaParams {
   name: string;
   description: string;
   owner: string;
+  image: string;
 }
 
 @Injectable()
@@ -27,8 +29,20 @@ export class TecnologiaService {
     return new TecnologiaResponseDto(newTecnologia);
   }
 
-  async findAll(): Promise<TecnologiaResponseDto[]> {
-    const tecs = await this.prismaService.tecnologia.findMany();
+  async findAll(
+    take?: number,
+    skip?: number,
+  ): Promise<TecnologiaResponseDto[]> {
+    if (!take) {
+      take = 2;
+    }
+    if (!skip) {
+      skip = 0;
+    }
+    const tecs = await this.prismaService.tecnologia.findMany({
+      skip,
+      take,
+    });
     return tecs.map((tec) => {
       return new TecnologiaResponseDto(tec);
     });
