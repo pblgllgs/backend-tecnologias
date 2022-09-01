@@ -34,7 +34,7 @@ export class TecnologiaService {
     skip?: number,
   ): Promise<TecnologiaResponseDto[]> {
     if (!take) {
-      take = 2;
+      take = 4;
     }
     if (!skip) {
       skip = 0;
