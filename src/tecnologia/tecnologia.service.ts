@@ -210,7 +210,7 @@ export class TecnologiaService {
   }
 
   async seed() {
-    await this.prismaService.tecnologia.deleteMany();
+    await this.prismaService.tecnologia.deleteMany({});
     await this.prismaService.tecnologia.createMany({
       data: tecnologias,
     });
