@@ -30,9 +30,14 @@ export class TecnologiaController {
     return this.tecnologiaService.findAll(+options.take, +options.skip);
   }
 
+  @Get('seed')
+  seed() {
+    return this.tecnologiaService.seed();
+  }
+
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.tecnologiaService.findOne(+id);
+  findOne(@Param('id', ParseIntPipe) id: number) {
+    return this.tecnologiaService.findOne(id);
   }
 
   @Patch(':id')
@@ -44,7 +49,7 @@ export class TecnologiaController {
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.tecnologiaService.remove(+id);
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.tecnologiaService.remove(id);
   }
 }
