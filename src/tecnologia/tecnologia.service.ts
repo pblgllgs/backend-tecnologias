@@ -111,6 +111,22 @@ const tecnologias = [
     description:
       'Z shell es un potente intérprete de comandos para sistemas operativos de tipo Unix, como por ejemplo los BSD o GNU/Linux.​ La primera versión de zsh fue escrita por Paul Falstad en 1990, cuando era estudiante en la Universidad de Princeton. Zsh se diseñó para poder usarse interactivamente',
   },
+  {
+    name: 'Github',
+    owner: 'Github Inc',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1661996251/tecnologias/GitHub-logo400x400_u6nvui.jpg',
+    description:
+      'GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc',
+  },
+  {
+    name: 'MongoDB',
+    owner: 'MongoDB Inc',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1661996356/tecnologias/logo-mongodb400x400png_bydnai.png',
+    description:
+      'MongoDB es un sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales',
+  },
 ];
 
 @Injectable()
