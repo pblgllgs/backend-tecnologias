@@ -127,6 +127,150 @@ const tecnologias = [
     description:
       'MongoDB es un sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales',
   },
+  {
+    name: 'Amazon Web Services',
+    owner: 'Amazon',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067271/tecnologias/aws-logo400x400_p8wpnr.png',
+    description:
+      'Amazon Web Services es una colección de servicios de computación en la nube pública que en conjunto forman una plataforma de computación en la nube, ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite',
+  },
+  {
+    name: 'Microsoft Azure',
+    owner: 'Midrosoft',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067324/tecnologias/logo-azure400x400_r7oac2.png',
+    description:
+      'Microsoft Azure es un servicio de computación en la nube creado por Microsoft para construir, probar, desplegar y administrar aplicaciones y servicios mediante el uso de sus centros de datos',
+  },
+  {
+    name: 'Javascript',
+    owner: 'Javascript',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067394/tecnologias/javascript-logo-400x400_arvdsk.png',
+    description:
+      'JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico',
+  },
+  {
+    name: 'Typescripts',
+    owner: 'Microsoft',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067453/tecnologias/typescript-logo400x400_c0w03c.svg',
+    description:
+      'TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos estáticos y objetos basados en clases',
+  },
+  {
+    name: 'Hyper Text Markup Language',
+    owner: 'HTML',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067534/tecnologias/html-logo400x400_qbiybp.png',
+    description:
+      'HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web',
+  },
+  {
+    name: 'Cascading Style Sheets',
+    owner: 'CSS',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067640/tecnologias/css-logo400x400_beewgc.png',
+    description:
+      'CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado',
+  },
+  {
+    name: 'Node package Manager',
+    owner: 'NPM',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067715/tecnologias/npm-logo400x400_taxkhs.png',
+    description:
+      'npm es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo Artistic License 2.0.',
+  },
+  {
+    name: 'Yarn',
+    owner: 'Yarn',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067792/tecnologias/yarn-logo400x400_olpoqp.png',
+    description:
+      'Yarn es un nuevo tipo de instalador de paquetes JavaScript y gestor de dependencias lanzado por la empresa Facebook en colaboración con otros desarrolladores como Google donde introduce cambios',
+  },
+  {
+    name: 'Git',
+    owner: 'Git',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067859/tecnologias/git-logo400x400_jm0nsp.png',
+    description:
+      'Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente',
+  },
+  {
+    name: 'Google Cloud Platform',
+    owner: 'GCP',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067912/tecnologias/gcp-logo400x400_cpe9q6.png',
+    description:
+      'Google Cloud es una plataforma que ha reunido todas las aplicaciones de desarrollo web que Google estaba ofreciendo por separado',
+  },
+  {
+    name: 'Kubernetes',
+    owner: 'Kubernetes',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662067983/tecnologias/kubernetes-logo-400x400_ocqcbj.png',
+    description:
+      'Kubernetes es un sistema de código libre para la automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores​ que fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation. Soporta diferentes entornos para la ejecución de contenedores, incluido Docker',
+  },
+  {
+    name: 'Vercel',
+    owner: 'Vercel',
+    image:
+      'https://res.cloudinary.com/pblgllgs/image/upload/v1662068024/tecnologias/vercel-logo400x400_rxyvmw.png',
+    description:
+      'Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work',
+  },
+  {
+    name: 'spring',
+    owner: 'Spring',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662154506/tecnologias/xqr3bfomeml6mwm9emzt.png',
+    description:
+      'Spring es un framework para el desarrollo de aplicaciones y contenedor de inversión de control, de código abierto para la plataforma Java.​La primera versión fue escrita por Rod Johnson, quien lo lanzó junto a la publicación de su libro Expert One-on-One J2EE Design and Development.',
+  },
+  {
+    name: 'Cloudinary',
+    owner: 'Cloudinary',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662155704/tecnologias/ydqtjgujwdmadzo2dvpj.png',
+    description:
+      'Cloudinary es una empresa de tecnología SaaS con sede en Santa Clara, California, y oficinas en Israel, Inglaterra, Polonia y Singapur. La empresa ofrece servicios de gestión de imágenes y vídeos basados ​​en la nube',
+  },
+  {
+    name: 'Chrome',
+    owner: 'Chrome',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662155955/tecnologias/lvkxyfpzgfkhzuazjmyf.jpg',
+    description:
+      'Google Chrome es un navegador web de código cerrado​​ desarrollado por Google, aunque derivado de proyectos de código abierto.​​​ Está disponible gratuitamente. El nombre del navegador deriva del término en inglés usado para el marco de la interfaz gráfica de usuario',
+  },
+  {
+    name: 'Vite',
+    owner: 'Vite',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662156162/tecnologias/tpmbhkgoqbjxsq3juv2b.png',
+    description:
+      'Vite (French word for "quick", pronounced /vit/, like "veet") is a new breed of frontend build tooling that significantly improves the frontend development experience.',
+  },
+  {
+    name: 'Linux',
+    owner: 'Linux',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662156780/tecnologias/z0dbvuv4ddxvlmp5h1li.jpg',
+    description:
+      'GNU/Linux es un sistema operativo tipo Unix compuesto por software libre y de código abierto.​ GNU/Linux surge de las contribuciones de varios proyectos de software, entre los cuales destacan GNU y el kernel «Linux»',
+  },
+  {
+    name: 'Graphql',
+    owner: 'Graphql',
+    image:
+      'http://res.cloudinary.com/pblgllgs/image/upload/v1662156967/tecnologias/zww2qffbu9rsql7blx7e.png',
+    description:
+      'GraphQL es un lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas con datos existentes.​ GraphQL fue desarrollado internamente por Facebook en 2012 antes de ser liberado públicamente en 2015',
+  },
 ];
 
 @Injectable()
